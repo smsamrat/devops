@@ -4,7 +4,9 @@ jobs:
   lint-check:
     runs-on: ubuntu-latest
     steps:
-      # -uses: actions/checkout@v4
-      - name: test ci
-        run: echo "I am running"
+      - uses: actions/checkout@v4
+      - name: build docker compose
+        run: docker compose build
+      - name: up docker compose
+        run: docker compose up
        
