@@ -1,0 +1,10 @@
+name: django
+on: [push]
+jobs:
+  lint-check:
+    runs-on: ubuntu-latest
+    steps:
+      # -uses: actions/checkout@v4
+      - name: test ci
+        run: echo "I am running"
+       
